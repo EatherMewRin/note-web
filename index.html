@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>神秘小笔记</title>
+    <style>
+        #guide{
+            position: fixed;
+            top: 75px;
+            left: 50px;
+            width: 200px;
+            height: auto;
+            background-color: rgba(100, 100, 100, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); 
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            color: white;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            text-align: center;
+
+        }
+        #guide p{
+            margin-left: 0px;
+            text-align: center;
+        }
+        #guide h5{
+            transition: all 1s;
+        }
+        #guide h5:hover{
+            color: red;
+            transition: all 1s;
+        }
+        #thanks{
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+            opacity: 0.5;
+        }
+        #thanks p{
+            position: relative;
+            text-align: right;
+            right: 0px;
+            bottom: 0px;
+            color: blueviolet;
+        }
+        .thanks{
+            position: relative;
+            top: 30px;
+            text-align: right;
+            color: rgb(100, 100, 100) !important;
+            opacity: 0; 
+            transition: all 1s;
+        }
+        #thanks:hover .thanks{
+            opacity: 1;
+            top: 0px;
+            transition: all 1s;
+        }
+        .text{
+            background-image: url("pic/note.png");
+            width: 1000px;
+            height: auto;
+            border-radius: 10px;
+            margin-left: 325px;
+            margin-top: 75px;
+        }
+        h1{
+            margin-left: 20px;
+            font-family: "微软雅黑";
+        }
+        h2{
+            margin-left: 50px;
+            font-family: "微软雅黑";
+        }
+        p{
+            margin-left: 70px;
+        }
+        .text img{
+            margin-left: 70px;
+        }
+        .text audio{
+            margin-left: 70px;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(253, 22, 22);
+            transition: all 0.5s;
+        }
+        a:hover{
+            color: darkorchid;
+            transition: all 0.5s;
+        }
+        body{
+            background-image: url("pic/background.png");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div id = "guide">
+        <h5>我是导航栏，不要忽视我(怒)</h5>
+        <p><a href = "#class1">第一节课</a></p>
+        <p><a href = "#class2">第二节课</a></p>
+        <p><a href = "#class3">第三节课</a></p>
+        <p><a href = "#class4">第四节课</a></p>
+        <p><a href = "#class5">第五节课</a></p>
+        <p><a href = "#class6">第六节课</a></p>
+        <p><a href = "#class8">第八节课</a></p>
+    </div>
+    <div id = "thanks">
+        <p class = "thanks">特别鸣谢
+        <br>DeepSeek:技术支持/修些神秘的bug
+        <br>EatherMeow_rin:吉祥物</p>
+        <p>by:@StarryBloom_awa</p>
+    </div>
+
+
+    <div class = "text">
+        <h1 id = "class1">第一节课</h1>
+        <h2>&lt;h&gt;类标签</h2>
+        <p>&lt;h&gt;类标签有h1~h6类型分别对应不同大小和重要等级<br>使用案例<br>&lt;h1&gt;网站标题&lt;/h1&gt;<br>&lt;h2&gt;第一章&lt;/h2&gt;
+        <br>&lt;h3&gt;第一小节&lt;/h3&gt;</p>
+        <h2>&lt;p&gt;标签</h2>
+        <p>正文部分，&lt;br&gt;换行</p>
+        <h2>&lt;img&gt;标签</h2>
+        <p>&lt;img&gt;标签用于插入图片<br>用法<br>&lt;img src = &quot;路径&quot;&gt;</p>
+        <img src = "pic/night.png">
+    </div>
+
+
+    <div class = "text">
+        <h1 id = "class2">第二节课</h1>
+        <h2>&lt;style&gt;标签</h2>
+        <p>&lt;style&gt;标签用于设置样式，用 标签名{<br>内容<br>}<br>设置</p>
+        <p>常用样式:<br>margin-left/top/right/bottom: 像素px;
+        <br>color: 颜色(可用rgb(R, G, B, Alpha)设置);
+        <br>background: url(&quot;路径&quot;);
+        <br>background-size: 值;
+        <br>font-family/size: 值;
+        <br>text-align: 值;</p>
+        <p>参考一下，例子我懒得手打了aaa</p>
+        <img src = "pic/屏幕截图 2026-02-21 134935.png">
+    </div>
+
+
+    <div class = "text">
+        <h1 id = "class3">第三节课</h1>
+        <h2>&lt;div&gt;标签</h2>
+        <p>挺简单的，不想多写</p>
+        <h2>&lt;audio&gt;标签</h2>
+        <p>用于播放音乐，用法:
+            <br>&lt;audio src="路径" controls&gt;&lt;/audio&gt;
+        </p>
+        <audio src = "sounds/use_totem.ogg" controls></audio>
+        <p>好吧这一节课就这么点东西</p>
+        <img src = "pic/这么弱.png">
+    </div>
+
+
+    <div class = "text">
+        <h1 id = "class4">第四节课</h1>
+        <h2>类选择器</h2>
+        <p>类选择器的优先级高于标签选择器，通过在标签末尾写上 class = &quot;名字&quot; 来设置
+        <br>在style标签中通过 .名称{<br>}
+        <br>来设置样式</p>
+        <p>好吧这节课东西更少（</p>
+        <img src = "pic/没招了.png">
+    </div>
+
+
+    <div class = "text">
+        <h1 id = "class5">第五节课</h1>
+        <h2>position设置</h2>
+        <p>position设置可以设置标签的定位方式，常见的有:
+        <br>static //默认定位
+            <br>可使用margin-left/top/right/bottom设置位置
+        <br>relative //相对于元素原来的位置进行偏移(不会影响其他元素布局，也就是飘逸到的位置不会占用空间)
+                    <br>可使用left/top/right/bottom设置位置
+        <br>absolute //相对于最近的已定位祖先元素（非 static）定位
+                    <br>(就是在&lt;div&gt;或&lt;body&gt;或其它盒子里乱飘还不占用空间)
+                    <br>可使用left/top/right/bottom设置位置
+        <br>fixed //相对于浏览器视口定位 导航栏就用的是这个
+                    <br>可用left/top/right/bottom设置位置</p>
+        <h2>border-radius</h2>
+        <p>border-radius可设置div的圆角 。 写法:
+        <br>border-radius: 值px;</p>
+    </div>
+
+
+    <div class = "text">
+        <h1 id = "class6">第六节课</h1>
+        <h2>ID选择器</h2>
+        <p>ID选择器优先级高于类选择器高于标签选择器，在标签后写上 id = &quot;名字&quot;来设置
+        <br>在style标签中通过#名字{<br>}
+        <br>来设置样式</p>
+        <h2>&lt;a&gt;标签</h2>
+        <p>&lt;a&gt;标签用于在各个网页中跳转，写法为:
+        <br>&lt;a href = &quot;链接或ID名&quot;&gt;&lt;/a&gt;</p>
+        <h2>hover</h2>
+        <p>hover用于设置鼠标悬停在标签上的样式，写法为:
+        <br>标签:hover{<br>}</p>
+    </div>
+
+
+    <div class = "text">
+        <h1 id = "class8">第八节课(第七节课是python，不想写)</h1>
+        <p>opacity: 值(0~1);  //用于设置透明度，0为完全透明
+        <br>transition: all 秒  //用于设置缓慢过度(鼠标悬停在右下角看效果)</p>
+        <img src = "pic/求救.gif">
+        <p>救命啊寒假过完一半多了(哭)</p>
+    </div>
+
+</body>
+</html>
